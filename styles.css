@@ -1,0 +1,7 @@
+body {
+    background-color: lightgray;
+}
+.news {
+    border: 2px solid darkslategray;
+    border-radius: 8px;
+}
