@@ -16,7 +16,7 @@ require __DIR__ . '/functions.php';
 </head>
 <body>
     <header>
-
+        
     </header>
     <main>
         <?php foreach($newsArticles as $newsArticle) : ?>
@@ -24,9 +24,9 @@ require __DIR__ . '/functions.php';
                 <h2 class="newsTitle"><?= $newsArticle['title']; ?></h2>
                 <p class="newsItem"><?= $newsArticle['article']; ?></p>
                 <div class="newsBottom">
-                    <p> <?= newsArticle['author']; ?></p>
-                    <p> <?= newsArticle['date']; ?></p>
-                    <p> <?= newsArticle['likes']; ?></p>
+                    <p> <?= $newsArticle['author']; ?></p>
+                    <p> <?= $newsArticle['date']; ?></p>
+                    <p> Likes <?= $newsArticle['likes']; ?></p>
                 </div>
             </div>
         <?php endforeach; ?>
