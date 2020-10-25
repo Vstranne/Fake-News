@@ -16,15 +16,16 @@ require __DIR__ . '/functions.php';
 </head>
 <body>
     <header>
-        
+        <h1>FAKE NEWS!</h1>
     </header>
     <main>
         <?php foreach($newsArticles as $newsArticle) : ?>
             <div class="news">
-                <h2 class="newsTitle"><?= $newsArticle['title']; ?></h2>
+                <h1 class="newsTitle"><?= $newsArticle['title']; ?></h2>
+                <p class="authorText"><?php $author = connectNewsToAuthor($newsArticle['author'], $authors); echo $author; ?></p>
                 <p class="newsItem"><?= $newsArticle['article']; ?></p>
                 <div class="newsBottom">
-                    <p> <?= $newsArticle['author']; ?></p>
+                   
                     <p> <?= $newsArticle['date']; ?></p>
                     <p> Likes <?= $newsArticle['likes']; ?></p>
                 </div>
