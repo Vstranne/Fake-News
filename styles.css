@@ -22,6 +22,7 @@ header {
     margin: 10px;
     /* border-bottom: black 2px solid; */
     font-family: 'Russo One', sans-serif;
+    border-radius: 3px;
 }
 header h1 {
     font-size: 48px;
@@ -43,10 +44,11 @@ main {
     /* border: 1px solid black; */
     background-color: rgb(255, 255, 255, 0.2);
     align-items: center;
+    border-radius: 3px;
 }
 .news {
     width: 90%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: lightgray;
     margin: 35px 5px;
     padding: 5px;
@@ -58,6 +60,7 @@ main {
     display: flex;
     flex-direction: row;
     margin: 3px;
+    align-items: center;
 
 }
 .newsTitle {
@@ -65,10 +68,15 @@ main {
     border-bottom: 1px solid black;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    /* padding-left: 5%; */
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .newsItem {
     font-family: 'Roboto Mono', sans-serif;
     font-size: 18px;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 5px;
     margin-top: 0px;
 }
@@ -76,5 +84,22 @@ main {
     padding-top: 0px;
     margin-top: 0px;
     font-size: 14px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    padding-left: 5%;
+}
+.newsBottom img {
+    width: 18px;
+    height: 18px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.newsImage {
+    align-self: center;
+    max-width: 90%;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.date {
+    margin-left: 5%;
 }

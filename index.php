@@ -16,18 +16,21 @@ require __DIR__ . '/functions.php';
 </head>
 <body>
     <header>
-        <h1>FAKE NEWS!</h1>
+        <h1>(logo placeholder)</h1>
     </header>
     <main>
+        <?php usort($newsArticles, "sortByDate"); ?>
         <?php foreach($newsArticles as $newsArticle) : ?>
             <div class="news">
                 <h1 class="newsTitle"><?= $newsArticle['title']; ?></h2>
-                <p class="authorText"><?php $author = connectNewsToAuthor($newsArticle['author'], $authors); echo $author; ?></p>
+                <p class="authorText">by: <?php $author = connectNewsToAuthor($newsArticle['author'], $authors); echo $author; ?></p>
+                <img class="newsImage" src="<?= $newsArticle['image']; ?>">
                 <p class="newsItem"><?= $newsArticle['article']; ?></p>
                 <div class="newsBottom">
                    
-                    <p> <?= $newsArticle['date']; ?></p>
-                    <p> Likes <?= $newsArticle['likes']; ?></p>
+                    <p class="date"> <?= $newsArticle['date']; ?></p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Bot%C3%B3n_Me_gusta.svg/1200px-Bot%C3%B3n_Me_gusta.svg.png" alt="Like">
+                    <p>  <?= $newsArticle['likes']; ?></p>
                 </div>
             </div>
         <?php endforeach; ?>
