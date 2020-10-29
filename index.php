@@ -13,6 +13,7 @@ require __DIR__ . '/functions.php';
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesdesktop.css">
 
 </head>
 <body>
