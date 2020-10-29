@@ -24,12 +24,12 @@ require __DIR__ . '/functions.php';
         <?php foreach($newsArticles as $newsArticle) : ?>
             <div class="news">
                 <h1 class="newsTitle"><?= $newsArticle['title']; ?></h2>
-                <p class="authorText">by: <?php $author = connectNewsToAuthor($newsArticle['author'], $authors); echo $author; ?></p>
+                <p class="authorText">by: <?php $author = connectNewsToAuthor($newsArticle['author'], $authors); echo $author; ?> - <?php echo approxTimeSince(timeSinceNow($newsArticle['date'])); ?></p>
                 <img class="newsImage" src="<?= $newsArticle['image']; ?>">
                 <p class="newsItem"><?= $newsArticle['article']; ?></p>
                 <div class="newsBottom">
                    
-                    <p class="date"> <?= $newsArticle['date']; ?></p>
+                    <p class="date"> <?= date('Y-m-d - H:i - ', strtotime($newsArticle['date'])); ?></p>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Bot%C3%B3n_Me_gusta.svg/1200px-Bot%C3%B3n_Me_gusta.svg.png" alt="Like">
                     <p>  <?= $newsArticle['likes']; ?></p>
                 </div>

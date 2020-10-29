@@ -1,10 +1,14 @@
 <?php
 
 declare(strict_types=1);
+
+//Connecting the two arrays linking an author to their published articles
 function connectNewsToAuthor(int $author_id, array $authors): string 
 {
     return $authors[$author_id];
 }
+
+// Function to use in usort() to sort newsarticles by date
 function sortByDate( $a, $b ) 
 {
     return strtotime($b["date"]) - strtotime($a["date"]);
@@ -51,7 +55,28 @@ function timeSinceNow (string $date) : array
     ];
     return $timeElapsed;
 }
-// $testvalue = "last sunday";
+
+function approxTimeSince (array $times) : string
+{
+    foreach($times as $key => $time){
+        if($time > 0) {
+            if ($key === 'days' && $time > 31 && $time <61) {
+                $key = 'month';
+                $time = 1;
+            }
+            else if ($key === 'days' && $time >= 61) {
+                $key = 'months';
+                $time = intdiv($time, 30);
+            }
+            
+            $timeSince = "$time $key ago";
+            return $timeSince;
+        }
+    }
+}
+
+// $testvalue = "2020-05-01";
 // $test = timeSinceNow($testvalue);
-// print_r($test);
+// $newString = approxTimeSince($test);
+// echo $newString;
 ?>
