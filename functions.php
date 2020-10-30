@@ -75,8 +75,4 @@ function approxTimeSince (array $times) : string
     }
 }
 
-// $testvalue = "2020-05-01";
-// $test = timeSinceNow($testvalue);
-// $newString = approxTimeSince($test);
-// echo $newString;
 ?>

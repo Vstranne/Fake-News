@@ -1,5 +1,6 @@
 @media screen and (min-width: 1024px) {
     main {
         width: 60%;
+        align-self: flex-start;
     }
 }
