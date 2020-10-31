@@ -74,5 +74,7 @@ function approxTimeSince (array $times) : string
         }
     }
 }
+$testTime = "2020-10-30 12:30";
+print_r(timeSinceNow($testTime));
 
 ?>
