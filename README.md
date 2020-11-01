@@ -1,3 +1,5 @@
+![Trump](https://media.giphy.com/media/h7poIVSJYrs323ZPuu/giphy.gif)
+
 # Fake-News
 
 My first project in php to create a newsfeed containing Fake News!
