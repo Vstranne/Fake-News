@@ -1,4 +1,3 @@
-
 <!-- The footer is a work in progress and not yet implemented! -->
 <!-- <footer>
     <div class="footer contact">
@@ -6,4 +5,5 @@
     </div>
 </footer> -->
 </body>
+
 </html>
