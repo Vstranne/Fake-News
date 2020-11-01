@@ -55,7 +55,7 @@ function timeSinceNow (string $date) : array
     ];
     return $timeElapsed;
 }
-
+//Function to send in output from function timeSinceNow to get approximation of how long ago it was
 function approxTimeSince (array $times) : string
 {
     foreach($times as $key => $time){

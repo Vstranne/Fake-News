@@ -14,13 +14,13 @@ Now all you have to do is write localhost:8000 in the adress field on your web b
 
 <h2>Reviews</h2>
 
-Felix please add your reivew down below:
+<a href="https://github.com/felixgren">Felix</a> please add your code review down below:
+-
+-
+-
+-
+-
 
-
-
-
-
-
-List of other testers of the site:
+Other testers of the site:
 
 
