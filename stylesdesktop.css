@@ -1,6 +1,21 @@
 @media screen and (min-width: 1024px) {
+    header {
+        width: calc(100% - 20%);
+        padding: 20px 10%;
+        border-radius: 5px;
+    }
+    .logo {
+        height: 30vh;
+        opacity: 100%;
+    }
     main {
         width: 40%;
         align-self: flex-start;
+        margin: 10px;
+        margin-left: 10%;
+        padding: 20px;
+    }
+    .news {
+        padding: 30px 0px;
     }
 }

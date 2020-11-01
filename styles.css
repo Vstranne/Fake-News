@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    background-image: url('trumpbwcrop.jpg');
+    background-image: url('/img/trumpbwcrop.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right top;
@@ -12,16 +12,16 @@ body {
     align-items: center;
 }
 header {
-    align-self: flex-start;
+    align-self: center;
     display: flex;
     background-color: rgba(255, 255, 255, 0.2);
     justify-content: flex-start;
     padding: 5px;
-    padding-left: 20px;
-    /* padding-left: 40px; */
-    width: calc(100% - 60px);
-    margin: 10px;
-    /* border-bottom: black 2px solid; */
+    /* padding-left: 20px; */
+    width: calc(98% - 10px);
+    margin: 1%;
+    margin-bottom: 2%;
+    /* margin: 10px; */
     font-family: 'Russo One', sans-serif;
     border-radius: 3px;
 }
@@ -32,28 +32,22 @@ header h1 {
     -webkit-text-stroke-color: rgb(255, 255, 255);
     padding-left: 20px; 
 }
-/* .news {
-     border: 2px solid darkslategray; 
-     border-radius: 8px; 
-} */
 main {
     align-self: center;
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin: 10px;
-    /* margin-left: 80px; */
-    /* border: 1px solid black; */
+    width: 98%;
+    margin: 1%;
     background-color: rgb(255, 255, 255, 0.2);
     align-items: center;
     border-radius: 3px;
 }
 .news {
-    width: 90%;
-    /* border: 1px solid black; */
+    width: calc(100% - 20px);
     background-color: lightgray;
-    margin: 35px 5px;
+    margin: 5px;
     padding: 5px;
+    margin-bottom: 6vh;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -68,32 +62,38 @@ main {
 .newsTitle {
     font-family: 'Russo One';
     border-bottom: 1px solid black;
+    margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    /* padding-left: 5%; */
     margin-left: 5%;
     margin-right: 5%;
 }
 .newsItem {
     font-family: 'Roboto Slab', 'Roboto Mono', sans-serif;
-    font-size: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
+    font-size: 16px;
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
     padding-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 0px;
+    margin-bottom: 1%;
+    border-bottom: 1px solid black;
 }
 .authorText {
+    font-family: sans-serif;
     padding-top: 0px;
     margin-top: 0px;
     font-size: 14px;
     margin-bottom: 10px;
     padding-left: 5%;
 }
-.newsBottom img {
+.likeButton {
     width: 18px;
     height: 18px;
     padding-left: 5px;
     padding-bottom: 5px;
+    margin: 0px;
 }
 .newsImage {
     align-self: center;
@@ -104,5 +104,10 @@ main {
 }
 .date {
     margin-left: 5%;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-family: 'Roboto Slab', sans-serif;
+}
+.likeNumber {
+    margin: 0px;
 }
