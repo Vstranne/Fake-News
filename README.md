@@ -23,6 +23,7 @@ Now all you have to do is write localhost:8000 in the adress field on your web b
 - `functions.php:17-76` - Code could be refactored to be shorter by using DateTime::diff, but I think that your own implementation is very impressive :ok_hand:
 - `functions.php:77-78` - Don't leave commented code that's not going to be used.
 
-Other testers of the site:
-
+### Other testers of the site:
+- [Jonathan](https://github.com/Icarium2)
+- [Mark](https://github.com/MadosMark)
 
